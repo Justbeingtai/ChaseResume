@@ -90,13 +90,7 @@ a {
     margin-bottom: 2rem;
 }
 
-.group-1 {
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-}
-
-.group-2 {
+.group-1, .group-2, .group-3 {
     display: flex;
     flex-direction: column;
     gap: 5rem;
@@ -110,6 +104,19 @@ a {
     display: flex;
     flex-direction: row;
     gap: 5rem;
+}
+
+.group-3>div{
+    flex: 1;
+}
+
+@media only screen and(max-width:768px){
+    .profile {
+        margin-bottom: 0;
+    }
+    .group-3 {
+        flex-direction: column;
+    }
 }
 
 .profile_container {
@@ -178,17 +185,17 @@ a {
     font-size: 1.6rem;
     font-weight: 700;
 }
-/*education*/
+/* Education */
 .edu_item {
     margin-top: 2rem;
 }
 
-/*exp*/
+/* Experience */
 .exp_item {   
     margin-top: 2rem;
 }
 
-/*Interest */
+/* Interest */
 .interest_items {
     margin-top: 2rem;
     display: flex;
@@ -211,7 +218,7 @@ a {
     width: 2rem;
 }
 
-/*socials */
+/* Socials */
 .social_items {
     margin-top: 2rem;
 }
@@ -225,9 +232,27 @@ a {
     justify-content: flex-start;
     color: var(--text-color);
 }
+
 .social_item:hover {
     color: var(--primary-color);
 }
+
 .social_item svg {
     width: 2rem;
+}
+
+hr {
+   grid-column: 1/-1;
+   width: 80%;
+   margin: 0 auto;
+   margin-bottom: 1reml;
+   margin-top: 5rem;
+   border: none;
+   border-top: 2px solid rgba(128, 128, 128, 0.229);
+}
+
+@media only screen and (max-width:768px){
+    hr {
+        margin: 0 auto;
+    }
 }
