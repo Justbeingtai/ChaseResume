@@ -1,1 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color: #ff7613;
+    --text-color: #727171;   
+}
+html {
+    font-size: 10px;
+}
+body{
+    font-family: inter, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+img {
+    width: 120%
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    padding: 5rem;
+    background: #070707;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+        gap: 7rem;
+    }
+}
+
+.profile{
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.profile_container {
+    display: flex;
+    gap: 2rem;
+}
