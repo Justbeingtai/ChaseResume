@@ -24,6 +24,13 @@ img {
     border-radius: 75px;
 }
 
+.discription {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
 
 a {
     text-decoration: none;
@@ -84,4 +91,20 @@ a {
     font-size: 1.5rem;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.downloadBtn {
+    display: block;
+    text-decoration: underline;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+.downloadBtn:hover {
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+    .profile_container {
+    flex-direction: column;
+    }
 }
