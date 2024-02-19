@@ -19,8 +19,11 @@ body{
 }
 
 img {
-    width: 120%
+    width: 150%;
+    height: 100%;
+    border-radius: 75px;
 }
+
 
 a {
     text-decoration: none;
@@ -36,6 +39,7 @@ a {
     background: #070707;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    
 }
 @media only screen and (max-width: 768px) {
     .container {
@@ -54,4 +58,30 @@ a {
 .profile_container {
     display: flex;
     gap: 2rem;
+}
+.profile_profileImg {
+    max-width: 250px;
+    margin-right: 70px
+}
+.profile_name_firstName {
+    color: white;
+    font-weight: 200;
+    font-size: clamp(2rem, 8vw, 4rem);
+    text-transform:uppercase;
+    display: block;
+    margin-bottom: -0.8rem;
+}
+
+.profile_name_lastName {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: clamp(2.5rem, 15vw, 7rem);
+    text-transform: uppercase;
+    display: block;
+}
+
+.profile_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
 }
