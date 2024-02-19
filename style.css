@@ -102,6 +102,10 @@ a {
     gap: 5rem;
 }
 
+.group-3 {
+    max-width: 
+}
+
 .profile_container {
     display: flex;
     gap: 2rem;
@@ -198,5 +202,26 @@ a {
 }
 
 .interest_item svg {
+    width: 2rem;
+}
+
+/*socials */
+.social_items {
+    margin-top: 2rem;
+}
+
+.social_item {
+    margin-top: 1.5;
+    font-size: 1.5rem;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    justify-content: flex-start;
+    color: var(--text-color);
+}
+.social_item:hover {
+    color: var(--primary-color);
+}
+.social_item svg {
     width: 2rem;
 }
