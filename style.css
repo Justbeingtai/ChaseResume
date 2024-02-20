@@ -22,7 +22,7 @@ body {
 }
 
 img {
-    width: 300%;
+    width: 350%;
     height: 100%;
     border-radius: 75px;
 }
@@ -126,7 +126,7 @@ a {
 
 .profile_profileImg {
     max-width: 250px;
-    margin-right: 150px;
+    margin-right: 180px;
 }
 
 .profile_name_firstName {
